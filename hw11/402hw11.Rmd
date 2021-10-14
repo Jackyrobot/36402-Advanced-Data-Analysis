@@ -1,0 +1,178 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
+--
+title: "36-402 Homework 10"
+author: "Jacky Liu"
+date: "2/12/21"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+pima = read.csv("pima.csv")
+```
+
+## Problem 1
+
+### Problem 1 (a)
+
+Plots:
+
+```{r, warning=FALSE, message=FALSE}
+library(tidyverse)
+library(GGally)
+ggpairs(pima, columns=1:8)
+```
+
+Summaries:
+
+```{r}
+means = vector(length = 8)
+SDs = vector(length = 8)
+mins = vector(length = 8)
+for (i in 1:8){
+  means[i] = mean(pima[,i])
+  SDs[i] = sd(pima[,i])
+  mins[i] = min(pima[,i])
+}
+means
+SDs
+mins
+```
+The above values show the means, standard deviations, and minimums of each variable in the same order as in the GGPairs plots above. 
+
+For variables such as bmi, diastolic, and triceps, the value of 0 usually doesn't make sense. Therefore, it is most likely a filler value for NA. 
+
+```{r}
+# Replace 0 values with NA
+for(i in 1:length(pima$glucose)) {
+  if(pima$glucose[i] == 0){
+    pima$glucose[i] = NA
+  }
+  if(pima$diastolic[i] == 0){
+    pima$diastolic[i] = NA
+  }
+  if(pima$triceps[i] == 0){
+    pima$triceps[i] = NA
+  }
+  if(pima$insulin[i] == 0){
+    pima$insulin[i] = NA
+  }
+  if(pima$bmi[i] == 0){
+    pima$bmi[i] = NA
+  }
+}
+```
+
+```{r}
+# create new data frame with NA entries omitted
+newpima = na.omit(pima)
+length(newpima[,1])
+```
+
+
+### Problem 1 (b)
+
+```{r}
+model1 = glm(test ~ ., family = binomial, data=newpima)
+summary(model1)
+```
+
+It seems that diastolic, triceps, and insulin do not have statistically significant association and may not be contributing to the fit. 
+
+### Problem 1 (c)
+
+```{r}
+model2 = glm(test ~ 1, data = newpima)
+anova(model2, model1, test="Rao")
+```
+
+The p-value is small which suggests that model 1 is a better fir to the data than model 2. This means Model 1 is a significant improvement on Model 2. 
+
+### Problem 1 (d)
+
+
+Do women with signs of diabetes have higher 2-hour serum insulin values?
+
+```{r}
+NOdiabetes = newpima[which(newpima$test == 0),]
+YESdiabetes = newpima[which(newpima$test == 1),]
+t.test(NOdiabetes$insulin, YESdiabetes$insulin)
+```
+
+Based on our statistical test above, the p-value is very small, which means women with signs of diabetes most likely have higher 20hour serum insulin values.
+
+The insulin coefficient is in model 1 is 0.52757, which makes it not significant.
+
+These answers are not contradictory because model 1 is not simply only between insulin and diabetes test; there are other factors in the model as well. If you fit the same model except with everything taken out except insulin and test, we can see that it is significant in this case (p=0.005653). 
+
+### Problem 1 (e)
+
+```{r}
+model3 <- step(model1, direction="backward", trace=0)
+anova(model3, model1, test="Chisq")
+```
+
+The p-value is large, which means that we fail to reject the null hypothesis. This suggests that model 3 is a better fit to the data.
+
+### Problem 1 (g)
+
+```{r}
+preds = predict(model3, data.frame(pregnant=3, glucose=103, diastolic=70, tricep=29.2, insulin=160, bmi=32.4, diabetes=0.6, age=32), type="response", se.fit=TRUE)
+```
+
+The probability of this Pima woman testing positive based on Model 3 is 0.1593196. 
+
+```{r}
+c(preds$fit - qnorm(0.1)*preds$se.fit, preds$fit + qnorm(0.1)*preds$se.fit)
+```
+
+The 90% confidence interval is (0.1255062, 0.1931330).
+
+
+### Problem 1 (h)
+
+```{r}
+pred2 = predict(model3, data.frame(pregnant=3, glucose=103, diastolic=70, tricep=29.2, insulin=160, bmi=32.4, diabetes=0.6, age=32), se.fit=TRUE)
+pred3 = predict(model3, data.frame(pregnant=3, glucose=103, diastolic=70, tricep=29.2, insulin=160, bmi=32.4, diabetes=0.25, age=32), se.fit=TRUE)
+pred2
+pred3
+```
+
+The log-odds are different by 0.402819. 
+
+```{r}
+ci2 = c(pred2$fit - qnorm(0.1)*pred2$se.fit, pred2$fit + qnorm(0.1)*pred2$se.fit)
+ci3 = c(pred3$fit - qnorm(0.1)*pred3$se.fit, pred3$fit + qnorm(0.1)*pred3$se.fit)
+ci2-ci3
+```
+
+The 90% confidence interval for the difference is (0.3489199, 0.4567191). 
+
+### Problem 1 (i)
+
+```{r}
+library(np)
+pima.np = npreg(newpima$test ~ fitted.values(model3), bws=0.075)
+plot(fitted.values(model3), fitted.values(pima.np))
+```
+
+The kernel regression's fitted values follow the y=x line fairly closely. This suggests that model 3 is fairly well calibrated.
+
+```{r}
+pima.np1 = npreg(newpima$test ~ fitted.values(model1), bws=0.075)
+plot(fitted.values(model1), fitted.values(pima.np1))
+```
+
+Model 1 also seems fairly well calibrated. None of these models appear to be noticeably better calibrated than the other. 
+
+## Problem 2
+
+![low effort meme (source: original)](meme.png){width=40%}
+

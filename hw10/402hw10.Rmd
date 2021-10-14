@@ -1,0 +1,111 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
+--
+title: "36-402 Homework 10"
+author: "Jacky Liu"
+date: "2/12/21"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+gmp = read.csv("gmp.csv")
+library(mgcv)
+```
+
+## Problem 1
+
+### Problem 1 (a)
+
+```{r}
+# Y = pcgmp
+# N = population
+modelA = lm(log(pcgmp) ~ log(pop), data = gmp)
+par(mfrow = c(1, 2))
+plot(log(gmp$pop), residuals(modelA)); abline(0,0)
+qqnorm(residuals(modelA)); qqline(residuals(modelA))
+```
+
+The residuals for model A indicate that the assumptions of the linear model (iid, linearity, constant variance, Gaussian noise) seem relatively but not perfectly plausible. The points in the Q-Q plot seem to fit the line well. The residual plot shows there may be slight signs of heteroskedacity. Overall the data show some modest signs of betraying the linear model assumptions, but not too extreme. 
+
+### Problem 1 (b)
+
+```{r}
+modelB = gam(log(pcgmp) ~ log(pop) + 
+                          s(log(finance), k=5, fx=TRUE) +
+                          s(log(prof.tech), k=5, fx=TRUE) +
+                          s(log(ict), k=5, fx=TRUE) +
+                          s(log(management), k=5, fx=TRUE), data = gmp)
+summary(modelB)
+par(mfrow = c(1, 2))
+plot(log(gmp$pop), residuals(modelB)); abline(0,0)
+qqnorm(residuals(modelB)); qqline(residuals(modelB))
+```
+
+From the summary of Model B, first we can see that the model assumes a gaussian distribution of our errors, and the link identity shows that our model doesn't transform the predictions. The parametric coefficients part tells us that logpop does not have statistical significance. The coefficients of smooth terms tells us that ict and management have statistical significance, while finance has slight significance only under 0.1 level. The residuals tell us that the assumptions of the model are fairly plausible. 
+
+### Problem 1 (c)
+
+```{r}
+anova(modelA, modelB)
+```
+From our test, we get a p-value of 6.137e-05 which means we reject the null hypothesis that model A is correct against the alternative that the larget model B is correct.
+
+```{r}
+par(mfrow = c(2, 2))
+plot(modelB)
+```
+
+finance, prof.tech, and management seem that a linear fit could work. ict seems to have the most nonlinear relationship. 
+
+### Problem 1 (d)
+
+```{r, warning=FALSE, message=FALSE}
+origdata = gmp[c(4,3)]
+modela = lm(log(pcgmp) ~ log(pop), data = origdata)
+generate_data<-function(xs) {
+  ys <- predict(modela, newdata=data.frame(pop=xs)) + rnorm(length(xs),sd=sqrt(xs^2+1))
+  return(data.frame(pop=xs,pcgmp=ys))
+}
+B = 1000
+fstats<- numeric(B)
+for(ii in 1:B) {
+  boot_data<-generate_data(origdata$pop)
+  boot_fit<-lm(log(pcgmp) ~ log(pop), data=boot_data)
+  #fstats_parametric[ii] <- anova(boot_fit, modelA)$F[2]
+}
+n = nrow(origdata)
+for (j in 1:B){
+  therows = sample(n,n,replace=T)
+  bootdata = data.frame(pop = origdata$pop[therows],
+                     pcgmp = origdata$pcgmp[therows])
+  bootmodel = lm(log(pcgmp) ~ log(pop), data=bootdata)
+  anova(modela,bootmodel)
+}
+```
+
+These analyses suggest that the null distribution used to test the hypothesis in part c is not appropriate since the null distributrion should be that all the regression coefficients are equal to zero. 
+
+### Problem 1 (e)
+
+It is not appropriate to do a resample cases bootstrap to estimate the null distribution of the F statistic because 
+the relationship between log(pcgmp) and log(pop) might be linear, which suggests that it is not advisable to use resample cases. 
+
+If one did perform a “resample cases” bootstrap and computed the F statistic for each bootstrap sample, the distribution of the F statistic we would be estimating would be a normal instead of a t distribution.
+
+
+### Problem 1 (f)
+
+These biases appear somewhat large. The se.fit values producted by the predict function are not close to the standard deviations estimated by the bootstrap. The three sets of bootstrap values don't appear to have approximately the t distributions that correspond to confidence intervals were computed without the bootstrap.
+
+
+
+
+
+

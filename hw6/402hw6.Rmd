@@ -1,0 +1,191 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
+--
+title: "36-402 Homework 6"
+author: "Jacky Liu"
+date: "2/12/21"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+load("engine.Rdata")
+```
+
+## Problem 1
+
+### Problem 1 (a)
+
+```{r}
+par(mfrow=c(1,2))
+plot(engine.xtrain, engine.ytrain, xlab="Engine displacement", pch=".", ylab = "MPG", main = "All training data")
+plot(engine.xtrain, 1/engine.ytrain, xlab="Engine displacement", pch=".", ylab = "1/MPG", main = "All training data")
+
+
+```
+
+Just by looking, the 1/mpg plot seems slightly more linear than mpg since the mpg plot's points looks like it curves more as we move right. 
+The 1/mpg plot seems to have a violation of constant variance as points seem to spread out more as we move right. 
+A method that could be used to address this problem might be to make our model more complex, such as adding interaction terms, or transforming our data.
+
+### Problem 1 (b)
+
+```{r}
+eng.disp = engine.xtrain[,1]
+mpg = engine.ytrain[,1]
+fit = lm((1/mpg) ~ eng.disp)
+summary(fit)
+par(mfrow=c(1,2))
+plot(eng.disp, fit$residuals); abline(h=0) 
+qqnorm(fit$residuals); qqline(fit$residuals)
+
+```
+
+The assumptions of the linear model (iid, linearity, constant variance, Gaussian noise) seem relatively but not perfectly plausible. Although the Q-Q line seems to fit the points very well, there may be signs of heteroskedasticity in the residuals plot. Overall the data show some modest signs of betraying the linear model assumptions, but not too extreme.
+
+### Problem 1 (c)
+
+```{r}
+set.seed(69)
+n = length(engine.xtrain[,1])
+B = 10000 ## number of bootstraps
+results = numeric(B) ## vector to hold results
+for(b in 1:B){
+  i = sample(x = 1:n, size = n, replace = TRUE) ## sample indices
+  x = engine.xtrain[,i] ## get data
+  y = engine.ytrain[,i]
+  fit = lm(1/y ~ x)
+  slope = fit$coefficients[2]
+  results[b] = slope
+}
+mean(results)
+sd(results)
+```
+
+The sample mean of bootstrapped slope parameter estimates is 0.0001107592 and standard deviation is 0.0003257189.
+
+```{r}
+abs(0.0003257189 - 0.0000115)/0.0003257189
+```
+The percent change was 0.9646935.
+
+
+### Problem 1 (d)
+
+```{r}
+# create a 50x200 matrix where each row is a single replication of B=200 bootstrap samples
+samples = matrix(results, nrow=50)
+deviations = apply(samples, 1, sd)
+t.test(deviations, mu=0.0000115)
+qqnorm(deviations); qqline(deviations)
+```
+
+The 50 bootstrap errors mostly fit the line except for the two tails, which means this mostly looks like a plausible normal sample.
+It makes sense to check this because bootstrapped standard deviations (which is inherently biased) should still form a normal distribution. 
+
+
+### Problem 1 (e)
+
+
+One of the 50 sample stdevs calculated is a measure of how different the subset of slopes are from each other.
+
+The difference is that if you do 10 reps of 1000 instead, you will get less data that's more precise, or in other words you get more bias and less variance. 
+
+
+## Problem 2
+
+### Problem 2 (a)
+
+```{r}
+library(MASS)
+data(cats)
+model = lm(Hwt ~ 0 + Bwt:Sex, data=cats)
+summary(model)
+```
+
+Forcing the intercept to zero is a reasonable thing to do because we don't always assume homosedasticity of estimated residuals, which means that we may not want to always assume an intercept term, and we want to insure that the residual term is zero mean and normally distributed. 
+
+
+### Problem 2 (b)
+
+$$ H_0: B_{1 Sex=Female} = B_{1 Sex=Male}$$ 
+$$ H_a: B_{1 Sex=Female} \neq B_{1 Sex=Male}$$
+
+```{r}
+anova(lm(Hwt ~ 0 + Bwt * Sex, data=cats))
+```
+
+We see that in the anova above, the p-value under the interaction of Bwt by Sex is 0.04722. That means we reject our null hypothesis under an alpha=0.05 significance level and conclude that the slope coefficient for Bwt between female and male cats most likely differ. 
+
+### Problem 2 (c)
+
+```{r}
+t = (3.88345 - 3.91461)^2
+t
+```
+
+The value of our test statistic is 0.0009709456.
+
+
+### Problem 2 (d)
+
+```{r}
+B = 1000
+femalecats = cats[which(cats$Sex=="F"),]
+female.lm = lm(Hwt ~ 0 + Bwt, data=femalecats)
+malecats = cats[which(cats$Sex=="M"),]
+male.lm = lm(Hwt ~ 0 + Bwt, data=malecats)
+
+resample <- function(x) {
+  return(sample(x, size=length(x), replace=TRUE))
+}
+
+sim.cats.resids <- function() {
+  new.femalecats = femalecats
+  new.malecats = malecats
+  
+  noise.female = resample(residuals(female.lm))
+  noise.male = resample(residuals(male.lm))
+  
+  new.femalecats$Hwt = fitted(female.lm) + noise.female
+  new.malecats$Hwt = fitted(male.lm) + noise.male
+  
+  new.cats = rbind(new.femalecats, new.malecats)
+  return(new.cats)
+}
+
+coefs.cats.lm <- function(df) {
+  fit <- lm(Hwt ~ Bwt, data=df)
+  return(coefficients(fit))
+}
+
+cats.lm.samp.dist.resids <- replicate(B,coefs.cats.lm(sim.cats.resids()))
+
+hist(cats.lm.samp.dist.resids)
+abline(v=t, col="blue")
+```
+
+### Problem 2 (e)
+
+```{r}
+count = 0
+for(resid in cats.lm.samp.dist.resids){
+  if(t >= resid){
+    count = count + 1
+  }
+}
+count/length(cats.lm.samp.dist.resids)
+```
+
+Based on the result, we conclude that there is most likely no significant difference between the regression lines for male and female cats. 
+
+
+
+
+

@@ -1,0 +1,107 @@
+---
+title: "36-402 Homework 2"
+author: "Jacky Liu"
+date: "2/19/21"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+## Problem 1
+
+### Problem 1 (a)
+
+```{r}
+housetrain = read.csv("housetrain.csv", sep=",")
+housetest = read.csv("housetest.csv", sep=",")
+res = cor(housetrain)
+round(res, 4)
+```
+
+### Problem 1 (b)
+
+```{r}
+model0 = lm(Median_house_value ~ 1, data=housetrain)
+model0
+```
+
+```{r}
+model1 = lm(Median_house_value ~ Median_household_income, data=housetrain)
+model1
+par(mfrow=c(1,2)) 
+plot(housetrain$Median_house_value, model1$residuals); abline(h=0) 
+qqnorm(model1$residuals); qqline(model1$residuals)
+```
+
+```{r}
+model2 = lm(Median_house_value ~ Mean_household_income, data=housetrain)
+model2
+par(mfrow=c(1,2)) 
+plot(housetrain$Median_house_value, model2$residuals); abline(h=0) 
+qqnorm(model2$residuals); qqline(model2$residuals)
+```
+
+```{r}
+model3 = lm(Median_house_value ~ Median_household_income + Mean_household_income, data=housetrain)
+model3
+par(mfrow=c(1,2)) 
+plot(housetrain$Median_house_value, model3$residuals); abline(h=0) 
+qqnorm(model3$residuals); qqline(model3$residuals)
+```
+
+```{r}
+model4 = lm(Median_house_value ~ Median_household_income + Mean_household_income + 
+              Population*Median_household_income + Latitude*Median_household_income +
+              Population*Latitude + Mean_household_income*Longitude + Latitude*Longitude, data=housetrain)
+summary(model4)
+
+par(mfrow=c(3,3))
+for(i in c(1:6)){
+  plot(as.numeric(housetrain[,i]), model4$residuals)
+  abline(h=0)
+}
+qqnorm(model4$residuals); qqline(model4$residuals)
+```
+For model 4, we simulated these extra covariates by computing a regression model for all covariates and looking at significance. 
+
+The assumptions of the linear model (iid, linearity, constant variance, Gaussian noise) seem relatively but not perfectly plausible. Although the residuals appear to mostly have constant variance, there may be some heteroskedasticity, especially in the first three plots. The residuals appear roughly Gaussian but some have heavier tails than we’d expect under normality. Overall the data show some modest signs of betraying the linear model assumptions, but not too extreme.
+
+### Problem 1 (c)
+
+The reason the coefficients of Median_household_income and Mean_household_income
+in Model 3 are both different from the coefficients of the same predictors in Models
+1 and 2 is because doing multiple linear regression is not the same thing as doing two simple linear regression on both variables. Having separate univariate models causes correlations to be ignored.
+
+
+### Problem 1 (d)
+
+```{r}
+train_error_3 = mean(model3$residuals^2)
+train_error_4 = mean(model4$residuals^2)
+train_error_3
+train_error_4
+```
+The training error on model 4 is lower than the training error on model 3. I would expect the training error to decrease more if we added more covariates as it overfits.
+
+### Problem 1 (e)
+
+```{r}
+test_error_0 = mean((housetest$Median_house_value - predict.lm(model0, housetest)) ^ 2)
+test_error_1 = mean((housetest$Median_house_value - predict.lm(model1, housetest)) ^ 2)
+test_error_2 = mean((housetest$Median_house_value - predict.lm(model2, housetest)) ^ 2)
+test_error_3 = mean((housetest$Median_house_value - predict.lm(model3, housetest)) ^ 2)
+test_error_4 = mean((housetest$Median_house_value - predict.lm(model4, housetest)) ^ 2)
+
+test_error_0
+test_error_1
+test_error_2
+test_error_3
+test_error_4
+```
+
+The highest test error was model 0 followed by model 1. Models 2 and 3 had similar errors. The lowest test error was model 4 which makes it the best model here. 
+
+

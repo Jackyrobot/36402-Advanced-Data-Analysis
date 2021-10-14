@@ -1,0 +1,348 @@
+"","HAGRID","Kingdom","Phylum","Class","Order","Family","Genus","Species","Common.name","Maximum.longevity.yrs","Body.mass.g","Metabolic.rate","Temperature"
+"4",18,"Animalia","Chordata","Amphibia","Anura","Bufonidae","Anaxyrus","americanus","American toad",36,21.6,0.00829,288
+"12",26,"Animalia","Chordata","Amphibia","Anura","Bufonidae","Anaxyrus","terrestris","Southern toad",10,19.2,0.00698,288
+"22",36,"Animalia","Chordata","Amphibia","Anura","Bufonidae","Rhinella","marina","Cane toad",24.8,105,0.0303,293
+"46",60,"Animalia","Chordata","Amphibia","Anura","Hylidae","Hyla","versicolor","Gray treefrog",7.8,6.97,0.00433,290.5
+"71",85,"Animalia","Chordata","Amphibia","Anura","Pipidae","Xenopus","laevis","African clawed frog",30.3,63.6,0.012,288
+"74",88,"Animalia","Chordata","Amphibia","Anura","Ranidae","Lithobates","catesbeianus","American bullfrog",16,51.2,0.0134,288
+"76",90,"Animalia","Chordata","Amphibia","Anura","Ranidae","Lithobates","pipiens","Northern leopard frog",9,21.6,0.00576,289.78
+"78",92,"Animalia","Chordata","Amphibia","Anura","Ranidae","Lithobates","sylvaticus","Wood frog",5,7.8,0.00416,289.8
+"97",111,"Animalia","Chordata","Amphibia","Caudata","Ambystomatidae","Ambystoma","maculatum","Spotted salamander",32,12.8,0.005,290
+"103",117,"Animalia","Chordata","Amphibia","Caudata","Ambystomatidae","Ambystoma","tigrinum","Tiger salamander",25,3.21,0.00196,291
+"105",119,"Animalia","Chordata","Amphibia","Caudata","Amphiumidae","Amphiuma","means","Two-toed amphiuma",27,199,0.00904,288
+"109",123,"Animalia","Chordata","Amphibia","Caudata","Cryptobranchidae","Cryptobranchus","alleganiensis","Hellbender",29,358,0.0253,288
+"124",138,"Animalia","Chordata","Amphibia","Caudata","Plethodontidae","Desmognathus","quadramaculatus","Black-bellied salamander",15,14.1,0.00411,288
+"135",149,"Animalia","Chordata","Amphibia","Caudata","Plethodontidae","Plethodon","cinereus","Eastern red-backed salamander",25,0.76,9.9e-05,278.5
+"138",152,"Animalia","Chordata","Amphibia","Caudata","Plethodontidae","Plethodon","glutinosus","Northern slimy salamander",20.1,4.2,0.00191,288
+"161",175,"Animalia","Chordata","Amphibia","Caudata","Salamandridae","Salamandra","salamandra","European fire salamander",24,19.1,0.00857,288
+"764",779,"Animalia","Chordata","Aves","Passeriformes","Fringillidae","Serinus","canaria","House canary",24,13.3,0.230065,314.15
+"1246",1262,"Animalia","Chordata","Aves","Psittaciformes","Psittacidae","Melopsittacus","undulatus","Budgerigar",21,25.2,0.3035,314.15
+"1523",1542,"Animalia","Chordata","Mammalia","Afrosoricida","Tenrecidae","Echinops","telfairi","Lesser hedgehog tenrec",19,116.4,0.75,307.85
+"1525",1544,"Animalia","Chordata","Mammalia","Afrosoricida","Tenrecidae","Hemicentetes","semispinosus","Streaked tenrec",2.7,116.4,0.38,308.15
+"1526",1545,"Animalia","Chordata","Mammalia","Afrosoricida","Tenrecidae","Microgale","dobsoni","Dobson's shrew tenrec",5.6,44.6,0.315,304.05
+"1527",1546,"Animalia","Chordata","Mammalia","Afrosoricida","Tenrecidae","Microgale","talazaci","Talazac's shrew tenrec",5.8,44,0.243,303.95
+"1528",1547,"Animalia","Chordata","Mammalia","Afrosoricida","Tenrecidae","Setifer","setosus","Greater hedgehog tenrec",14.1,427.6,0.573,305.35
+"1529",1548,"Animalia","Chordata","Mammalia","Afrosoricida","Tenrecidae","Tenrec","ecaudatus","Tenrec",8.7,650,0.729,306.15
+"1530",1549,"Animalia","Chordata","Mammalia","Artiodactyla","Antilocapridae","Antilocapra","americana","Pronghorn",15.5,34779.3,50.973,311.15
+"1545",1564,"Animalia","Chordata","Mammalia","Artiodactyla","Bovidae","Bos","taurus","Domestic cattle",20,347000,306.77,311.15
+"1572",1591,"Animalia","Chordata","Mammalia","Artiodactyla","Bovidae","Connochaetes","taurinus","Blue wildebeest",24.3,196500,230.073,311.15
+"1589",1608,"Animalia","Chordata","Mammalia","Artiodactyla","Bovidae","Kobus","ellipsiprymnus","Waterbuck",30,1e+05,148.949,311.85
+"1595",1614,"Animalia","Chordata","Mammalia","Artiodactyla","Bovidae","Madoqua","kirkii","Kirk's dik-dik",17.3,4290,11.966,312.15
+"1613",1632,"Animalia","Chordata","Mammalia","Artiodactyla","Bovidae","Ovis","canadensis","Bighorn sheep",20.6,67030.8,114.674,311.15
+"1617",1636,"Animalia","Chordata","Mammalia","Artiodactyla","Bovidae","Philantomba","monticola","Blue duiker",15.9,4200,10.075,312.55
+"1620",1639,"Animalia","Chordata","Mammalia","Artiodactyla","Bovidae","Raphicerus","campestris","Steenbok",9.3,9600,20.619,312.55
+"1631",1650,"Animalia","Chordata","Mammalia","Artiodactyla","Bovidae","Taurotragus","oryx","Eland",26.1,141404,190.209,309.65
+"1640",1659,"Animalia","Chordata","Mammalia","Artiodactyla","Camelidae","Camelus","dromedarius","Dromedary",28.4,407000,224.779,310.65
+"1641",1660,"Animalia","Chordata","Mammalia","Artiodactyla","Camelidae","Lama","glama","Llama",28.9,115000,148.94,311.45
+"1651",1671,"Animalia","Chordata","Mammalia","Artiodactyla","Cervidae","Capreolus","capreolus","Western roe deer",17.5,21500,46.347,311.15
+"1653",1673,"Animalia","Chordata","Mammalia","Artiodactyla","Cervidae","Cervus","elaphus","Red deer",31.5,67000,112.43,308.35
+"1668",1688,"Animalia","Chordata","Mammalia","Artiodactyla","Cervidae","Odocoileus","virginianus","White-tailed deer",23,61862.5,123.447,312.15
+"1672",1692,"Animalia","Chordata","Mammalia","Artiodactyla","Cervidae","Rangifer","tarandus","Caribou and reindeer",21.8,85000,119.66,310.35
+"1693",1713,"Animalia","Chordata","Mammalia","Artiodactyla","Suidae","Sus","scrofa","Wild boar",27,135000,104.15,312.15
+"1696",1716,"Animalia","Chordata","Mammalia","Artiodactyla","Tayassuidae","Pecari","tajacu","Collared peccary",31.5,20500,33.165,310.65
+"1700",1720,"Animalia","Chordata","Mammalia","Artiodactyla","Tragulidae","Tragulus","javanicus","Lesser mouse-deer",14,1615.5,4.883,311.55
+"1702",1722,"Animalia","Chordata","Mammalia","Carnivora","Ailuridae","Ailurus","fulgens","Red panda",19,5740,4.898,310.75
+"1707",1727,"Animalia","Chordata","Mammalia","Carnivora","Canidae","Canis","latrans","Coyote",21.8,10148.9,19.423,310.15
+"1709",1729,"Animalia","Chordata","Mammalia","Carnivora","Canidae","Canis","mesomelas","Black-backed jackal",16.7,7720,21.533,311.15
+"1710",1730,"Animalia","Chordata","Mammalia","Carnivora","Canidae","Cerdocyon","thous","Crab-eating fox",12.7,5444,8.502,311.35
+"1728",1748,"Animalia","Chordata","Mammalia","Carnivora","Canidae","Vulpes","lagopus","Arctic fox",16.3,3600,7.665,311.75
+"1729",1749,"Animalia","Chordata","Mammalia","Carnivora","Canidae","Vulpes","macrotis","Kit fox",15.8,1769,4.928,311.15
+"1733",1753,"Animalia","Chordata","Mammalia","Carnivora","Canidae","Vulpes","vulpes","Red fox",21.3,4580.3,13.731,311.85
+"1734",1754,"Animalia","Chordata","Mammalia","Carnivora","Canidae","Vulpes","zerda","Fennec",16.3,1159.2,2.693,311.95
+"1736",1756,"Animalia","Chordata","Mammalia","Carnivora","Eupleridae","Fossa","fossana","Malagasy civet",21.4,2260,5.02262,311.05
+"1739",1759,"Animalia","Chordata","Mammalia","Carnivora","Felidae","Acinonyx","jubatus","Cheetah",20.5,38446.1,61.77,312.15
+"1751",1771,"Animalia","Chordata","Mammalia","Carnivora","Felidae","Leopardus","pardalis","Ocelot",28.2,10500,17.368,311.15
+"1753",1773,"Animalia","Chordata","Mammalia","Carnivora","Felidae","Leopardus","wiedii","Margay",24,3600,5.227,311.55
+"1760",1780,"Animalia","Chordata","Mammalia","Carnivora","Felidae","Panthera","leo","Lion",27,98000,94.58,311.05
+"1761",1781,"Animalia","Chordata","Mammalia","Carnivora","Felidae","Panthera","onca","Jaguar",28,50400,62.419,310.15
+"1763",1783,"Animalia","Chordata","Mammalia","Carnivora","Felidae","Panthera","tigris","Tiger",26.3,137900,133.859,310.65
+"1770",1790,"Animalia","Chordata","Mammalia","Carnivora","Felidae","Puma","concolor","Cougar",23.8,37200,49.326,310.75
+"1771",1791,"Animalia","Chordata","Mammalia","Carnivora","Felidae","Puma","yagouaroundi","Jaguarundi",18.6,8400,9.69,311.55
+"1778",1798,"Animalia","Chordata","Mammalia","Carnivora","Herpestidae","Galerella","sanguinea","Slender mongoose",12.6,519.6,2.202,311.85
+"1783",1803,"Animalia","Chordata","Mammalia","Carnivora","Herpestidae","Herpestes","javanicus","Javan mongoose",16.6,611,2.248,312.95
+"1790",1810,"Animalia","Chordata","Mammalia","Carnivora","Herpestidae","Suricata","suricatta","Meerkat",20.6,850,1.729,309.45
+"1793",1813,"Animalia","Chordata","Mammalia","Carnivora","Hyaenidae","Hyaena","hyaena","Striped hyena",25,34300,31.954,310.15
+"1794",1814,"Animalia","Chordata","Mammalia","Carnivora","Hyaenidae","Proteles","cristata","Aardwolf",20,7902.6,11.563,309.55
+"1799",1819,"Animalia","Chordata","Mammalia","Carnivora","Mephitidae","Spilogale","putorius","Eastern spotted skunk",10.5,624,1.674,309.55
+"1803",1823,"Animalia","Chordata","Mammalia","Carnivora","Mustelidae","Eira","barbara","Tayra",22.3,2950,6.811,311.55
+"1804",1824,"Animalia","Chordata","Mammalia","Carnivora","Mustelidae","Enhydra","lutris","Sea otter",27,26832.8,98.479,310.65
+"1807",1827,"Animalia","Chordata","Mammalia","Carnivora","Mustelidae","Gulo","gulo","Wolverine",19.5,12700,31.765,310.15
+"1813",1833,"Animalia","Chordata","Mammalia","Carnivora","Mustelidae","Lutra","lutra","European otter",18.2,10000,25.104,311.25
+"1815",1835,"Animalia","Chordata","Mammalia","Carnivora","Mustelidae","Martes","americana","American marten",17.8,966.5,3.579,311.15
+"1818",1838,"Animalia","Chordata","Mammalia","Carnivora","Mustelidae","Martes","martes","European pine marten",18.2,920,4,310.15
+"1822",1842,"Animalia","Chordata","Mammalia","Carnivora","Mustelidae","Meles","meles","Old World badger",18.6,11050,16.647,310.15
+"1826",1846,"Animalia","Chordata","Mammalia","Carnivora","Mustelidae","Mustela","erminea","Ermine",12.5,125.5,1.276,312.75
+"1828",1848,"Animalia","Chordata","Mammalia","Carnivora","Mustelidae","Mustela","frenata","Long-tailed weasel",8.8,225,1.344,312.15
+"1834",1854,"Animalia","Chordata","Mammalia","Carnivora","Mustelidae","Neovison","vison","American mink",11.4,660,2.722,312.15
+"1837",1857,"Animalia","Chordata","Mammalia","Carnivora","Mustelidae","Taxidea","taxus","American badger",25,9000,15.062,311.15
+"1839",1859,"Animalia","Chordata","Mammalia","Carnivora","Nandiniidae","Nandinia","binotata","African palm civet",21,4270,5.565,310.55
+"1867",1887,"Animalia","Chordata","Mammalia","Carnivora","Phocidae","Phoca","vitulina","Harbor seal",47.6,27400,73.29,309.85
+"1874",1894,"Animalia","Chordata","Mammalia","Carnivora","Procyonidae","Bassariscus","sumichrasti","Cacomistle",24,1280,3.537,311.95
+"1875",1895,"Animalia","Chordata","Mammalia","Carnivora","Procyonidae","Nasua","narica","White-nosed coati",26.4,3670,6.733,311.75
+"1876",1896,"Animalia","Chordata","Mammalia","Carnivora","Procyonidae","Nasua","nasua","South american coati",23.7,3924.3,5.591,309.55
+"1877",1897,"Animalia","Chordata","Mammalia","Carnivora","Procyonidae","Potos","flavus","Kinkajou",38.4,2318,4.294,309.25
+"1878",1898,"Animalia","Chordata","Mammalia","Carnivora","Procyonidae","Procyon","cancrivorus","Crab-eating raccoon",19,1160,2.588,310.15
+"1879",1899,"Animalia","Chordata","Mammalia","Carnivora","Procyonidae","Procyon","lotor","Common raccoon",21,4842.2,10.428,311.15
+"1888",1908,"Animalia","Chordata","Mammalia","Carnivora","Viverridae","Arctictis","binturong","Binturong",27,14280,12.747,309.85
+"1889",1909,"Animalia","Chordata","Mammalia","Carnivora","Viverridae","Arctogalidia","trivirgata","Small-toothed palm civet",16.1,2010,3.085,309.35
+"1898",1918,"Animalia","Chordata","Mammalia","Carnivora","Viverridae","Genetta","tigrina","Large-spotted genet",21.3,1699,4.189,310.15
+"1901",1921,"Animalia","Chordata","Mammalia","Carnivora","Viverridae","Paradoxurus","hermaphroditus","Asian palm civet",24.5,3282.6,5.534,309.65
+"1952",1974,"Animalia","Chordata","Mammalia","Chiroptera","Emballonuridae","Saccopteryx","bilineata","Greater sac-winged bat",6,7.8,0.081,308.65
+"1954",1976,"Animalia","Chordata","Mammalia","Chiroptera","Megadermatidae","Macroderma","gigas","Australian false vampire bat",22.6,126,0.639,310.15
+"1956",1978,"Animalia","Chordata","Mammalia","Chiroptera","Miniopteridae","Miniopterus","schreibersii","Schreibers's long-fingered bat",22,10.9,0.145,310.85
+"1959",1981,"Animalia","Chordata","Mammalia","Chiroptera","Molossidae","Tadarida","brasiliensis","Brazilian free-tailed bat",12,13.3,0.117,309.15
+"1962",1984,"Animalia","Chordata","Mammalia","Chiroptera","Noctilionidae","Noctilio","leporinus","Greater bulldog bat",11.8,61,0.4,306.95
+"1964",1986,"Animalia","Chordata","Mammalia","Chiroptera","Phyllostomidae","Artibeus","jamaicensis","Jamaican fruit-eating bat",19.2,46.1,0.359,309.55
+"1966",1988,"Animalia","Chordata","Mammalia","Chiroptera","Phyllostomidae","Carollia","perspicillata","Seba's short-tailed bat",17,14.9,0.24,309.55
+"1967",1989,"Animalia","Chordata","Mammalia","Chiroptera","Phyllostomidae","Desmodus","rotundus","Vampire bat",29.2,29.4,0.194,308.15
+"1969",1991,"Animalia","Chordata","Mammalia","Chiroptera","Phyllostomidae","Glossophaga","soricina","Pallas's long-tongued bat",11,9.6,0.164,308.65
+"1971",1993,"Animalia","Chordata","Mammalia","Chiroptera","Phyllostomidae","Macrotus","californicus","California leaf-nosed bat",17,11.7,0.082,308.15
+"1973",1995,"Animalia","Chordata","Mammalia","Chiroptera","Phyllostomidae","Phyllostomus","discolor","Pale spear-nosed bat",9,33.5,0.267,307.75
+"1974",1996,"Animalia","Chordata","Mammalia","Chiroptera","Phyllostomidae","Phyllostomus","hastatus","Greater spear-nosed bat",18,84.2,0.559,307.85
+"1975",1997,"Animalia","Chordata","Mammalia","Chiroptera","Phyllostomidae","Platyrrhinus","lineatus","White-lined broad-nosed bat",13,21.9,0.25,309.55
+"1976",1998,"Animalia","Chordata","Mammalia","Chiroptera","Phyllostomidae","Sturnira","lilium","Little yellow-shouldered bat",12,21.4,0.237,309.55
+"1977",1999,"Animalia","Chordata","Mammalia","Chiroptera","Pteropodidae","Cynopterus","brachyotis","Lesser short-nosed fruit bat",10.1,37.2,0.262,309.65
+"1979",2001,"Animalia","Chordata","Mammalia","Chiroptera","Pteropodidae","Dobsonia","moluccensis","Moluccan naked-backed fruit bat",12.3,312.4,1.411,309.95
+"1988",2010,"Animalia","Chordata","Mammalia","Chiroptera","Pteropodidae","Pteropus","giganteus","Indian flying fox",40,562.2,1.622,309.85
+"1989",2011,"Animalia","Chordata","Mammalia","Chiroptera","Pteropodidae","Pteropus","hypomelanus","Variable flying fox",20.3,520.8,1.618,308.85
+"1993",2015,"Animalia","Chordata","Mammalia","Chiroptera","Pteropodidae","Pteropus","poliocephalus","Gray-headed flying fox",23.6,598,1.768,309.65
+"1995",2017,"Animalia","Chordata","Mammalia","Chiroptera","Pteropodidae","Pteropus","pumilus","Little golden-mantled flying fox",17.2,194.2,0.705,309.25
+"1996",2018,"Animalia","Chordata","Mammalia","Chiroptera","Pteropodidae","Pteropus","rodricensis","Rodriguez flying fox",28,254.5,0.753,309.65
+"1997",2019,"Animalia","Chordata","Mammalia","Chiroptera","Pteropodidae","Pteropus","scapulatus","Little red flying fox",15.8,362,1.353,310.15
+"1998",2020,"Animalia","Chordata","Mammalia","Chiroptera","Pteropodidae","Pteropus","vampyrus","Large flying fox",20.9,1024.3,4.486,310.05
+"2000",2022,"Animalia","Chordata","Mammalia","Chiroptera","Pteropodidae","Rousettus","aegyptiacus","Egyptian rousette",22.9,146,0.684,307.95
+"2007",2029,"Animalia","Chordata","Mammalia","Chiroptera","Vespertilionidae","Antrozous","pallidus","Pallid bat",14.8,22,0.104,307.15
+"2011",2033,"Animalia","Chordata","Mammalia","Chiroptera","Vespertilionidae","Eptesicus","fuscus","Big brown bat",19,13.3,0.113,309.15
+"2026",2048,"Animalia","Chordata","Mammalia","Chiroptera","Vespertilionidae","Myotis","lucifugus","Little brown bat",34,5.8,0.051,305.15
+"2030",2052,"Animalia","Chordata","Mammalia","Chiroptera","Vespertilionidae","Myotis","nigricans","Black myotis",7,3.7,0.027,307.15
+"2034",2056,"Animalia","Chordata","Mammalia","Chiroptera","Vespertilionidae","Myotis","vivesi","Fish-eating bat",10,25,0.199,309.15
+"2044",2066,"Animalia","Chordata","Mammalia","Chiroptera","Vespertilionidae","Plecotus","auritus","Brown big-eared bat",30,10.2,0.082,307.15
+"2051",2073,"Animalia","Chordata","Mammalia","Cingulata","Dasypodidae","Chaetophractus","vellerosus","Screaming hairy armadillo",16.2,1110,1.707,307.55
+"2052",2074,"Animalia","Chordata","Mammalia","Cingulata","Dasypodidae","Chaetophractus","villosus","Large hairy armadillo",25.2,4540,4.508,308.25
+"2054",2076,"Animalia","Chordata","Mammalia","Cingulata","Dasypodidae","Dasypus","novemcinctus","Nine-banded armadillo",22.3,3413.7,4.655,307.65
+"2056",2078,"Animalia","Chordata","Mammalia","Cingulata","Dasypodidae","Euphractus","sexcinctus","Six-banded armadillo",22.1,8190,6.901,307.35
+"2057",2079,"Animalia","Chordata","Mammalia","Cingulata","Dasypodidae","Priodontes","maximus","Giant armadillo",15,45190,16.892,306.75
+"2058",2080,"Animalia","Chordata","Mammalia","Cingulata","Dasypodidae","Tolypeutes","matacus","Southern three-banded armadillo",36.8,1160,1.172,306.15
+"2060",2082,"Animalia","Chordata","Mammalia","Cingulata","Dasypodidae","Zaedyus","pichiy","Pichi",12.5,1740,2.192,308.35
+"2061",2083,"Animalia","Chordata","Mammalia","Dasyuromorphia","Dasyuridae","Antechinomys","laniger","Kultarr",3.5,25.8,0.141,308.95
+"2064",2086,"Animalia","Chordata","Mammalia","Dasyuromorphia","Dasyuridae","Antechinus","flavipes","Yellow-footed antechinus",3.9,46.5,0.252,308.15
+"2067",2089,"Animalia","Chordata","Mammalia","Dasyuromorphia","Dasyuridae","Antechinus","stuartii","Brown antechinus",5.4,25,0.189,308.25
+"2068",2090,"Animalia","Chordata","Mammalia","Dasyuromorphia","Dasyuridae","Antechinus","swainsonii","Dusky antechinus",3.3,66.9,0.351,309.15
+"2069",2091,"Animalia","Chordata","Mammalia","Dasyuromorphia","Dasyuridae","Dasycercus","cristicauda","Mulgara",7.4,91,0.26,310.85
+"2071",2093,"Animalia","Chordata","Mammalia","Dasyuromorphia","Dasyuridae","Dasyuroides","byrnei","Kowari",8,100,0.439,308.35
+"2072",2094,"Animalia","Chordata","Mammalia","Dasyuromorphia","Dasyuridae","Dasyurus","geoffroii","Western quoll",6.2,1326.7,2.991,309.35
+"2073",2095,"Animalia","Chordata","Mammalia","Dasyuromorphia","Dasyuridae","Dasyurus","hallucatus","Northern quoll",5.9,571,1.501,309.05
+"2074",2096,"Animalia","Chordata","Mammalia","Dasyuromorphia","Dasyuridae","Dasyurus","maculatus","Australian tiger cat",6.8,1782,3.142,310.05
+"2075",2097,"Animalia","Chordata","Mammalia","Dasyuromorphia","Dasyuridae","Dasyurus","viverrinus","Eastern quoll",6.8,945.3,2.26,309.05
+"2080",2102,"Animalia","Chordata","Mammalia","Dasyuromorphia","Dasyuridae","Phascogale","tapoatafa","Brush-tailed phascogale",5.9,153.7,0.694,310.55
+"2083",2105,"Animalia","Chordata","Mammalia","Dasyuromorphia","Dasyuridae","Planigale","maculata","Pygmy planigale",5.8,10.6,0.067,307.65
+"2084",2106,"Animalia","Chordata","Mammalia","Dasyuromorphia","Dasyuridae","Planigale","tenuirostris","Narrow-nosed planigale",5.2,7.1,0.063,307.65
+"2086",2108,"Animalia","Chordata","Mammalia","Dasyuromorphia","Dasyuridae","Pseudantechinus","macdonnellensis","Fat-tailed marsupial mouse",7,43.1,0.152,307.35
+"2089",2111,"Animalia","Chordata","Mammalia","Dasyuromorphia","Dasyuridae","Sarcophilus","harrisii","Tasmanian devil",13,6126.8,8.664,308.95
+"2090",2112,"Animalia","Chordata","Mammalia","Dasyuromorphia","Dasyuridae","Sminthopsis","crassicaudata","Fat-tailed dunnart",5,16,0.121,308.35
+"2094",2116,"Animalia","Chordata","Mammalia","Dasyuromorphia","Dasyuridae","Sminthopsis","macroura","Stripe-faced dunnart",4.9,20.6,0.128,306.45
+"2098",2120,"Animalia","Chordata","Mammalia","Dasyuromorphia","Myrmecobiidae","Myrmecobius","fasciatus","Numbat",11,438.2,0.907,305.65
+"2100",2122,"Animalia","Chordata","Mammalia","Didelphimorphia","Didelphidae","Caluromys","derbianus","Central American woolly opossum",8.7,342.7,1.194,308.15
+"2103",2125,"Animalia","Chordata","Mammalia","Didelphimorphia","Didelphidae","Chironectes","minimus","Water opossum (yapok)",3.1,940.5,2.793,308.15
+"2106",2128,"Animalia","Chordata","Mammalia","Didelphimorphia","Didelphidae","Didelphis","marsupialis","Southern opossum",4.2,1244.3,3.31,308.15
+"2107",2129,"Animalia","Chordata","Mammalia","Didelphimorphia","Didelphidae","Didelphis","virginiana","Virginia opossum",6.6,2846.6,5.299,308.15
+"2109",2131,"Animalia","Chordata","Mammalia","Didelphimorphia","Didelphidae","Lutreolina","crassicaudata","Lutrine opossum",2.9,812,2.265,308.95
+"2112",2134,"Animalia","Chordata","Mammalia","Didelphimorphia","Didelphidae","Marmosa","robinsoni","Robinson's mouse opossum",5,122,0.547,307.15
+"2114",2136,"Animalia","Chordata","Mammalia","Didelphimorphia","Didelphidae","Metachirus","nudicaudatus","Brown four-eyed opossum",3,336,1.144,308.15
+"2116",2138,"Animalia","Chordata","Mammalia","Didelphimorphia","Didelphidae","Monodelphis","brevicaudata","Short bare-tailed opossum",3.9,91.5,0.366,306.85
+"2117",2139,"Animalia","Chordata","Mammalia","Didelphimorphia","Didelphidae","Monodelphis","domestica","Gray short-tailed opossum",5.1,104,0.335,305.75
+"2119",2141,"Animalia","Chordata","Mammalia","Didelphimorphia","Didelphidae","Philander","opossum","Gray four-eyed opossum",4.4,751,1.886,308.95
+"2120",2142,"Animalia","Chordata","Mammalia","Diprotodontia","Acrobatidae","Acrobates","pygmaeus","Pygmy gliding possum",8.8,14,0.084,307.85
+"2122",2144,"Animalia","Chordata","Mammalia","Diprotodontia","Burramyidae","Burramys","parvus","Mountain pygmy possum",12,44.3,0.205,309.25
+"2124",2146,"Animalia","Chordata","Mammalia","Diprotodontia","Burramyidae","Cercartetus","nanus","Eastern pygmy possum",10.3,64.8,0.311,308.75
+"2130",2152,"Animalia","Chordata","Mammalia","Diprotodontia","Macropodidae","Dendrolagus","matschiei","Matschie's tree kangaroo",26.9,6960,7.96,309.45
+"2135",2157,"Animalia","Chordata","Mammalia","Diprotodontia","Macropodidae","Lagorchestes","conspicillatus","Spectacled hare-wallaby",8.8,2660,4.749,309.15
+"2142",2164,"Animalia","Chordata","Mammalia","Diprotodontia","Macropodidae","Macropus","eugenii","Tammar wallaby",15.1,4796,7.78,309.65
+"2147",2169,"Animalia","Chordata","Mammalia","Diprotodontia","Macropodidae","Macropus","robustus","Wallaroo",22,29647.9,33.056,309.25
+"2149",2171,"Animalia","Chordata","Mammalia","Diprotodontia","Macropodidae","Macropus","rufus","Red kangaroo",25,28500,31.353,309.05
+"2165",2187,"Animalia","Chordata","Mammalia","Diprotodontia","Petauridae","Gymnobelideus","leadbeateri","Leadbeater's possum",14.1,166,0.574,308.15
+"2167",2189,"Animalia","Chordata","Mammalia","Diprotodontia","Petauridae","Petaurus","breviceps","Sugar glider",17.8,129.3,0.517,309.05
+"2172",2194,"Animalia","Chordata","Mammalia","Diprotodontia","Phalangeridae","Spilocuscus","maculatus","Spotted cuscus",17,4250,6.27,307.85
+"2175",2197,"Animalia","Chordata","Mammalia","Diprotodontia","Phalangeridae","Trichosurus","vulpecula","Brush-tailed possum",15.9,1993.5,3.8,309.15
+"2177",2199,"Animalia","Chordata","Mammalia","Diprotodontia","Phascolarctidae","Phascolarctos","cinereus","Koala",22.1,4732.4,5.744,308.95
+"2181",2203,"Animalia","Chordata","Mammalia","Diprotodontia","Potoroidae","Bettongia","penicillata","Woylie",18.8,1018,3.132,310.35
+"2184",2206,"Animalia","Chordata","Mammalia","Diprotodontia","Potoroidae","Potorous","tridactylus","Long-nosed potoroo",14.5,1045.5,2.556,309.05
+"2187",2209,"Animalia","Chordata","Mammalia","Diprotodontia","Pseudocheiridae","Pseudocheirus","peregrinus","Ring-tailed possum",10.1,859.3,2.27,310.55
+"2190",2212,"Animalia","Chordata","Mammalia","Diprotodontia","Vombatidae","Lasiorhinus","latifrons","Southern hairy-nosed wombat",29.9,27348.2,16.001,308.45
+"2192",2214,"Animalia","Chordata","Mammalia","Erinaceomorpha","Erinaceidae","Atelerix","albiventris","Four-toed hedgehog",11.4,450,0.828,308.35
+"2197",2219,"Animalia","Chordata","Mammalia","Erinaceomorpha","Erinaceidae","Erinaceus","concolor","Eastern European hedgehog",7,822.7,1.937,308.35
+"2198",2220,"Animalia","Chordata","Mammalia","Erinaceomorpha","Erinaceidae","Erinaceus","europaeus","Western European hedgehog",11.7,1213.5,2.434,307.15
+"2199",2221,"Animalia","Chordata","Mammalia","Erinaceomorpha","Erinaceidae","Hemiechinus","auritus","Long-eared hedgehog",7.6,398.5,0.845,306.95
+"2200",2222,"Animalia","Chordata","Mammalia","Erinaceomorpha","Erinaceidae","Paraechinus","aethiopicus","Desert hedgehog",6.3,451.5,0.63,307.35
+"2204",2226,"Animalia","Chordata","Mammalia","Hyracoidea","Procaviidae","Procavia","capensis","Rock hyrax",14.8,2458,4.954,310.15
+"2209",2231,"Animalia","Chordata","Mammalia","Lagomorpha","Leporidae","Lepus","californicus","Black-tailed jackrabbit",11.8,2300,7.314,312.35
+"2212",2234,"Animalia","Chordata","Mammalia","Lagomorpha","Leporidae","Lepus","timidus","Mountain hare",18,3014.5,8.443,312.85
+"2214",2236,"Animalia","Chordata","Mammalia","Lagomorpha","Leporidae","Oryctolagus","cuniculus","European rabbit",9,2167.9,7.395,312.15
+"2215",2237,"Animalia","Chordata","Mammalia","Lagomorpha","Leporidae","Sylvilagus","audubonii","Audubon's cottontail rabbit",7.8,686.9,2.506,311.45
+"2223",2245,"Animalia","Chordata","Mammalia","Lagomorpha","Ochotonidae","Ochotona","princeps","American pika",7,109,0.932,313.25
+"2227",2249,"Animalia","Chordata","Mammalia","Macroscelidea","Macroscelididae","Elephantulus","intufi","Long-eared elephant shrew",9.3,46.5,0.29,310.35
+"2228",2250,"Animalia","Chordata","Mammalia","Macroscelidea","Macroscelididae","Elephantulus","rozeti","North African elephant shrew",7.2,49,0.288,310.25
+"2229",2251,"Animalia","Chordata","Mammalia","Macroscelidea","Macroscelididae","Elephantulus","rufescens","Rufous elephant shrew",7.9,53,0.317,310.45
+"2230",2252,"Animalia","Chordata","Mammalia","Macroscelidea","Macroscelididae","Macroscelides","proboscideus","Short-eared elephant shrew",8.7,39,0.292,309.35
+"2235",2257,"Animalia","Chordata","Mammalia","Monotremata","Ornithorhynchidae","Ornithorhynchus","anatinus","Duck-billed platypus",22.6,1030.3,1.931,307.15
+"2236",2258,"Animalia","Chordata","Mammalia","Monotremata","Tachyglossidae","Tachyglossus","aculeatus","Short-beaked echidna",49.5,2909,2.327,303.85
+"2237",2259,"Animalia","Chordata","Mammalia","Monotremata","Tachyglossidae","Zaglossus","bruijni","Long-nosed echidna",41.2,11848.6,6.493,303.95
+"2240",2262,"Animalia","Chordata","Mammalia","Peramelemorphia","Peramelidae","Echymipera","rufescens","Long-nosed echymipera",3.1,886.6,2.255,308.05
+"2241",2263,"Animalia","Chordata","Mammalia","Peramelemorphia","Peramelidae","Isoodon","auratus","Golden bandicoot",6.7,428,0.837,306.95
+"2242",2264,"Animalia","Chordata","Mammalia","Peramelemorphia","Peramelidae","Isoodon","macrourus","Northern brown bandicoot",6.8,1551,3.202,309.05
+"2243",2265,"Animalia","Chordata","Mammalia","Peramelemorphia","Peramelidae","Isoodon","obesulus","Southern brown bandicoot",6.5,717,1.238,307.05
+"2245",2267,"Animalia","Chordata","Mammalia","Peramelemorphia","Peramelidae","Perameles","gunnii","Eastern barred bandicoot",6.1,695,1.902,308.35
+"2246",2268,"Animalia","Chordata","Mammalia","Peramelemorphia","Peramelidae","Perameles","nasuta","Long-nosed bandicoot",5.6,645,1.763,309.25
+"2248",2270,"Animalia","Chordata","Mammalia","Peramelemorphia","Thylacomyidae","Macrotis","lagotis","Rabbit-bandicoot or bilby",9.6,1245.5,2.4,308.15
+"2271",2293,"Animalia","Chordata","Mammalia","Pilosa","Megalonychidae","Choloepus","hoffmanni","Hoffmann's two-toed sloth",41,4005.2,3.891,307.55
+"2272",2294,"Animalia","Chordata","Mammalia","Pilosa","Myrmecophagidae","Myrmecophaga","tridactyla","Giant anteater",31,30600,14.543,305.65
+"2273",2295,"Animalia","Chordata","Mammalia","Pilosa","Myrmecophagidae","Tamandua","mexicana","Northern tamandua",16,3884.2,5.124,305.15
+"2274",2296,"Animalia","Chordata","Mammalia","Pilosa","Myrmecophagidae","Tamandua","tetradactyla","Southern tamandua",19,3500,5.015,306.65
+"2277",2300,"Animalia","Chordata","Mammalia","Primates","Aotidae","Aotus","trivirgatus","Northern night monkey",30.1,914.5,2.499,311.15
+"2281",2304,"Animalia","Chordata","Mammalia","Primates","Atelidae","Alouatta","palliata","Mantled howler monkey",24,4670,11.464,309.15
+"2295",2318,"Animalia","Chordata","Mammalia","Primates","Callitrichidae","Callithrix","jacchus","White-tufted-ear marmoset",22.8,190,0.848,309.15
+"2298",2321,"Animalia","Chordata","Mammalia","Primates","Callitrichidae","Cebuella","pygmaea","Pygmy marmoset",18.6,110.7,0.599,308.35
+"2319",2343,"Animalia","Chordata","Mammalia","Primates","Cebidae","Saimiri","sciureus","South American squirrel monkey",30.2,836.7,4.429,311.15
+"2334",2358,"Animalia","Chordata","Mammalia","Primates","Cercopithecidae","Cercopithecus","mitis","Blue monkey",37.8,8648.7,19.276,310.65
+"2343",2367,"Animalia","Chordata","Mammalia","Primates","Cercopithecidae","Colobus","guereza","Guereza",35,10623.6,17.037,310.15
+"2345",2369,"Animalia","Chordata","Mammalia","Primates","Cercopithecidae","Erythrocebus","patas","Patas monkey",28.3,3000,5.958,312.45
+"2366",2390,"Animalia","Chordata","Mammalia","Primates","Cercopithecidae","Papio","hamadryas","Hamadryas baboon",37.5,12670.8,21.095,311.15
+"2385",2409,"Animalia","Chordata","Mammalia","Primates","Cheirogaleidae","Cheirogaleus","medius","Fat-tailed dwarf lemur",29,300,1.088,311.15
+"2393",2417,"Animalia","Chordata","Mammalia","Primates","Galagidae","Galago","senegalensis","Senegal galago",17.1,171.5,0.764,311.05
+"2395",2419,"Animalia","Chordata","Mammalia","Primates","Galagidae","Otolemur","crassicaudatus","Greater galago",22.7,993.5,2.595,309.75
+"2396",2420,"Animalia","Chordata","Mammalia","Primates","Galagidae","Otolemur","garnettii","Small-eared galago",20,1314,3.927,309.15
+"2400",2424,"Animalia","Chordata","Mammalia","Primates","Hominidae","Homo","sapiens","Human",122.5,70000,82.78,310.15
+"2416",2440,"Animalia","Chordata","Mammalia","Primates","Indriidae","Propithecus","verreauxi","Verreaux's sifaka",31,3350,3.738,309.15
+"2418",2442,"Animalia","Chordata","Mammalia","Primates","Lemuridae","Eulemur","fulvus","Brown lemur",35.5,2374.1,4.239,309.65
+"2430",2454,"Animalia","Chordata","Mammalia","Primates","Lorisidae","Arctocebus","calabarensis","Calabar angwantibo",13,206,0.731,309.15
+"2431",2455,"Animalia","Chordata","Mammalia","Primates","Lorisidae","Loris","tardigradus","Slender loris",21.6,284,0.714,308.65
+"2432",2456,"Animalia","Chordata","Mammalia","Primates","Lorisidae","Nycticebus","coucang","Slow loris",25.8,1128.6,1.504,308.55
+"2434",2458,"Animalia","Chordata","Mammalia","Primates","Lorisidae","Perodicticus","potto","Potto",32.4,968.6,1.942,309.25
+"2446",2470,"Animalia","Chordata","Mammalia","Primates","Tarsiidae","Carlito","syrichta","Philippine tarsier",16,113,0.43,306.95
+"2449",2473,"Animalia","Chordata","Mammalia","Proboscidea","Elephantidae","Elephas","maximus","Asiatic elephant",65.5,3672000,2336.5,308.95
+"2454",2478,"Animalia","Chordata","Mammalia","Rodentia","Bathyergidae","Cryptomys","damarensis","Damaraland mole-rat",15.5,131.3,0.418,308.35
+"2455",2479,"Animalia","Chordata","Mammalia","Rodentia","Bathyergidae","Cryptomys","hottentotus","African mole rat",11,78.9,0.35,307.55
+"2457",2481,"Animalia","Chordata","Mammalia","Rodentia","Bathyergidae","Georychus","capensis","Cape mole-rat",11.2,193,0.637,309.55
+"2459",2483,"Animalia","Chordata","Mammalia","Rodentia","Bathyergidae","Heterocephalus","glaber","Naked mole-rat",31,35.3,0.128,305.25
+"2462",2486,"Animalia","Chordata","Mammalia","Rodentia","Capromyidae","Capromys","pilorides","Desmarest's hutia",13.8,2630,3.375,308.85
+"2463",2487,"Animalia","Chordata","Mammalia","Rodentia","Capromyidae","Geocapromys","brownii","Brown's hutia",13.5,2456,4.11,309.15
+"2469",2493,"Animalia","Chordata","Mammalia","Rodentia","Caviidae","Cavia","porcellus","Guinea pig",12,639.1,2.13,312.15
+"2472",2496,"Animalia","Chordata","Mammalia","Rodentia","Caviidae","Galea","musteloides","Common yellow-toothed cavy",3.5,322,1.473,310.45
+"2474",2498,"Animalia","Chordata","Mammalia","Rodentia","Caviidae","Hydrochoerus","hydrochaeris","Capybara",15.1,26385,36.754,310.25
+"2475",2499,"Animalia","Chordata","Mammalia","Rodentia","Caviidae","Kerodon","rupestris","Rock cavy",12.9,801,2.011,311.35
+"2476",2500,"Animalia","Chordata","Mammalia","Rodentia","Chinchillidae","Chinchilla","lanigera","Long-tailed chinchilla",17.2,436.7,1.31,307.85
+"2479",2503,"Animalia","Chordata","Mammalia","Rodentia","Chinchillidae","Lagostomus","maximus","Plains viscacha",10.8,6794,10.623,309.95
+"2483",2507,"Animalia","Chordata","Mammalia","Rodentia","Cricetidae","Arvicola","amphibius","European water vole",2.5,94.7,0.613,310.65
+"2484",2508,"Animalia","Chordata","Mammalia","Rodentia","Cricetidae","Baiomys","taylori","Northern pygmy mouse",3.3,7.2,0.095,309.15
+"2486",2510,"Animalia","Chordata","Mammalia","Rodentia","Cricetidae","Cricetus","cricetus","Black-bellied hamster",3.6,365.3,1.251,312.65
+"2487",2511,"Animalia","Chordata","Mammalia","Rodentia","Cricetidae","Dicrostonyx","groenlandicus","Collared lemming",3.3,56.8,0.459,311.55
+"2494",2518,"Animalia","Chordata","Mammalia","Rodentia","Cricetidae","Lemmus","lemmus","Norway lemming",3.3,80,1.071,310.95
+"2496",2520,"Animalia","Chordata","Mammalia","Rodentia","Cricetidae","Mesocricetus","auratus","Golden hamster",3.9,108.2,0.69,311.25
+"2498",2522,"Animalia","Chordata","Mammalia","Rodentia","Cricetidae","Microtus","agrestis","Field vole",4.8,25,0.367,310.75
+"2499",2523,"Animalia","Chordata","Mammalia","Rodentia","Cricetidae","Microtus","arvalis","Common vole",4.8,21.9,0.343,310.15
+"2501",2525,"Animalia","Chordata","Mammalia","Rodentia","Cricetidae","Microtus","guentheri","Vole",3.9,43.8,0.447,311.45
+"2503",2527,"Animalia","Chordata","Mammalia","Rodentia","Cricetidae","Microtus","ochrogaster","Prairie vole",5.3,48.2,0.41,311.05
+"2506",2530,"Animalia","Chordata","Mammalia","Rodentia","Cricetidae","Microtus","pinetorum","Woodland vole",3.8,24.8,0.305,311.45
+"2512",2536,"Animalia","Chordata","Mammalia","Rodentia","Cricetidae","Neotoma","albigula","White-throated woodrat",9.5,177.6,0.735,309.15
+"2515",2539,"Animalia","Chordata","Mammalia","Rodentia","Cricetidae","Neotoma","lepida","Desert woodrat",10.5,112.5,0.46,309.95
+"2518",2542,"Animalia","Chordata","Mammalia","Rodentia","Cricetidae","Ochrotomys","nuttalli","Golden mouse",8.4,19.5,0.151,309.55
+"2521",2545,"Animalia","Chordata","Mammalia","Rodentia","Cricetidae","Onychomys","torridus","Southern grasshopper mouse",4.6,19.1,0.165,309.15
+"2522",2546,"Animalia","Chordata","Mammalia","Rodentia","Cricetidae","Peromyscus","californicus","California mouse",5.5,47,0.267,309.55
+"2523",2547,"Animalia","Chordata","Mammalia","Rodentia","Cricetidae","Peromyscus","crinitus","Canyon mouse",7.7,20.5,0.162,308.85
+"2524",2548,"Animalia","Chordata","Mammalia","Rodentia","Cricetidae","Peromyscus","eremicus","Cactus mouse",7.4,21,0.173,309.75
+"2526",2550,"Animalia","Chordata","Mammalia","Rodentia","Cricetidae","Peromyscus","leucopus","White-footed mouse",7.9,22.3,0.213,309.85
+"2527",2551,"Animalia","Chordata","Mammalia","Rodentia","Cricetidae","Peromyscus","maniculatus","Deer mouse",8.3,20.5,0.219,309.75
+"2529",2553,"Animalia","Chordata","Mammalia","Rodentia","Cricetidae","Peromyscus","truei","Pinyon mouse",5.4,33.1,0.307,309.85
+"2533",2557,"Animalia","Chordata","Mammalia","Rodentia","Cricetidae","Phodopus","sungorus","Dzhungarian hamster",3.9,31.3,0.313,309.25
+"2541",2565,"Animalia","Chordata","Mammalia","Rodentia","Cricetidae","Sigmodon","hispidus","Hispid cotton rat",5.2,159.6,1.085,311.25
+"2550",2574,"Animalia","Chordata","Mammalia","Rodentia","Cuniculidae","Cuniculus","paca","Lowland paca",16.3,9156,15.323,310.35
+"2552",2576,"Animalia","Chordata","Mammalia","Rodentia","Dasyproctidae","Dasyprocta","azarae","Azara's agouti",11.8,3849,10.521,310.65
+"2555",2579,"Animalia","Chordata","Mammalia","Rodentia","Dasyproctidae","Dasyprocta","leporina","Agouti",17.8,2687,8.694,311.45
+"2560",2584,"Animalia","Chordata","Mammalia","Rodentia","Dasyproctidae","Myoprocta","acouchy","Red acouchi",14.8,914,2.804,308.55
+"2566",2590,"Animalia","Chordata","Mammalia","Rodentia","Dipodidae","Jaculus","jaculus","Lesser Egyptian jerboa",7.3,75,0.515,310.65
+"2567",2591,"Animalia","Chordata","Mammalia","Rodentia","Dipodidae","Jaculus","orientalis","Greater Egyptian jerboa",5.5,139,0.775,310.15
+"2577",2601,"Animalia","Chordata","Mammalia","Rodentia","Echimyidae","Proechimys","semispinosus","Spiny rat",5.8,498,1.75,311.05
+"2578",2602,"Animalia","Chordata","Mammalia","Rodentia","Echimyidae","Thrichomys","apereoides","Brazilian spiny rat",7,323,1.153,310.75
+"2579",2603,"Animalia","Chordata","Mammalia","Rodentia","Erethizontidae","Coendou","prehensilis","Prehensile-tailed porcupine",26.6,3280,5.123,309.85
+"2580",2604,"Animalia","Chordata","Mammalia","Rodentia","Erethizontidae","Erethizon","dorsatus","North American porcupine",23.4,6871,13.675,309.15
+"2584",2608,"Animalia","Chordata","Mammalia","Rodentia","Geomyidae","Geomys","bursarius","Plains pocket gopher",12,197,0.769,308.15
+"2586",2610,"Animalia","Chordata","Mammalia","Rodentia","Geomyidae","Thomomys","bottae","Botta's pocket gopher",6.1,143,0.67,309.15
+"2593",2617,"Animalia","Chordata","Mammalia","Rodentia","Gliridae","Glis","glis","Fat dormouse",8.7,174.4,0.664,310.85
+"2597",2621,"Animalia","Chordata","Mammalia","Rodentia","Heteromyidae","Chaetodipus","fallax","San Diego pocket mouse",8.3,19.6,0.15,305.75
+"2601",2625,"Animalia","Chordata","Mammalia","Rodentia","Heteromyidae","Dipodomys","deserti","Desert kangaroo rat",8.6,105.8,0.517,309.95
+"2603",2627,"Animalia","Chordata","Mammalia","Rodentia","Heteromyidae","Dipodomys","merriami","Merriam's kangaroo rat",9.7,37.6,0.246,310.15
+"2605",2629,"Animalia","Chordata","Mammalia","Rodentia","Heteromyidae","Dipodomys","ordii","Ord's kangaroo rat",9.9,47.8,0.339,307.75
+"2612",2636,"Animalia","Chordata","Mammalia","Rodentia","Heteromyidae","Perognathus","longimembris","Little pocket mouse",8.3,8.5,0.061,307.85
+"2617",2641,"Animalia","Chordata","Mammalia","Rodentia","Hystricidae","Hystrix","africaeaustralis","Cape porcupine",23.1,11300,13.175,310.65
+"2624",2648,"Animalia","Chordata","Mammalia","Rodentia","Muridae","Acomys","cahirinus","Spiny mouse",5.9,42,0.258,310.65
+"2631",2655,"Animalia","Chordata","Mammalia","Rodentia","Muridae","Apodemus","flavicollis","Yellow-necked mouse",4.5,28.3,0.365,309.85
+"2634",2658,"Animalia","Chordata","Mammalia","Rodentia","Muridae","Apodemus","sylvaticus","Long-tailed field mouse",6.3,23.8,0.264,309.85
+"2638",2662,"Animalia","Chordata","Mammalia","Rodentia","Muridae","Conilurus","penicillatus","Brush-tailed rabbit rat",4.5,213.2,0.908,309.05
+"2641",2665,"Animalia","Chordata","Mammalia","Rodentia","Muridae","Desmodillus","auricularis","Cape short-eared gerbil",6.1,71.9,0.49,309.05
+"2643",2667,"Animalia","Chordata","Mammalia","Rodentia","Muridae","Gerbilliscus","afra","Cape gerbil",5.7,106.5,1.016,307.15
+"2645",2669,"Animalia","Chordata","Mammalia","Rodentia","Muridae","Gerbillus","gerbillus","Lesser Egyptian gerbil",5.9,29.7,0.237,310.35
+"2646",2670,"Animalia","Chordata","Mammalia","Rodentia","Muridae","Gerbillus","nanus","Baluchistan gerbil",4.5,29.7,0.129,311.95
+"2648",2672,"Animalia","Chordata","Mammalia","Rodentia","Muridae","Gerbillus","pyramidum","Greater Egyptian gerbil",8.2,108.5,0.454,309.25
+"2650",2674,"Animalia","Chordata","Mammalia","Rodentia","Muridae","Hydromys","chrysogaster","Golden-bellied water rat",7.3,900,2.97,309.75
+"2662",2686,"Animalia","Chordata","Mammalia","Rodentia","Muridae","Meriones","unguiculatus","Mongolian jird",6.3,64.8,0.546,311.35
+"2666",2690,"Animalia","Chordata","Mammalia","Rodentia","Muridae","Micaelamys","namaquensis","Rock mouse",4.7,62.6,0.292,309.95
+"2667",2691,"Animalia","Chordata","Mammalia","Rodentia","Muridae","Micromys","minutus","Old World harvest mouse",3.8,7.6,0.201,311.15
+"2671",2695,"Animalia","Chordata","Mammalia","Rodentia","Muridae","Mus","minutoides","Mouse",4.3,8,0.129,309.45
+"2673",2697,"Animalia","Chordata","Mammalia","Rodentia","Muridae","Mus","musculus","House mouse",4,18,0.271,310.05
+"2675",2699,"Animalia","Chordata","Mammalia","Rodentia","Muridae","Notomys","alexis","Spinifex hopping mouse",6.4,32.3,0.252,311.15
+"2691",2715,"Animalia","Chordata","Mammalia","Rodentia","Muridae","Rattus","fuscipes","Bush rat",5.3,76,0.471,310.65
+"2692",2716,"Animalia","Chordata","Mammalia","Rodentia","Muridae","Rattus","lutreolus","Australian swamp rat",4.4,109,0.353,309.85
+"2693",2717,"Animalia","Chordata","Mammalia","Rodentia","Muridae","Rattus","norvegicus","Norway rat",3.8,206.9,1.404,310.25
+"2694",2718,"Animalia","Chordata","Mammalia","Rodentia","Muridae","Rattus","rattus","Rat",4.2,117,0.77,311.15
+"2695",2719,"Animalia","Chordata","Mammalia","Rodentia","Muridae","Rhabdomys","pumilio","Four-striped grass mouse",4.5,39.6,0.179,310.15
+"2697",2721,"Animalia","Chordata","Mammalia","Rodentia","Muridae","Sekeetamys","calurus","Bushy-tailed jird",7.3,63.6,0.274,310.65
+"2699",2723,"Animalia","Chordata","Mammalia","Rodentia","Muridae","Tatera","indica","Indian gerbil",7,86.9,0.422,309.15
+"2709",2733,"Animalia","Chordata","Mammalia","Rodentia","Nesomyidae","Cricetomys","gambianus","Gambian rat",8.4,1686.7,6.024,308.75
+"2713",2737,"Animalia","Chordata","Mammalia","Rodentia","Nesomyidae","Mystromys","albicaudatus","White-tailed mouse",6.3,93.8,0.707,306.15
+"2714",2738,"Animalia","Chordata","Mammalia","Rodentia","Nesomyidae","Saccostomus","campestris","Pouched mouse",4.5,68.1,0.274,308.45
+"2716",2740,"Animalia","Chordata","Mammalia","Rodentia","Octodontidae","Octodon","degus","Degu",14,199.6,0.958,310.75
+"2718",2742,"Animalia","Chordata","Mammalia","Rodentia","Octodontidae","Spalacopus","cyanus","Coruro",10.8,126.2,0.561,309.65
+"2719",2743,"Animalia","Chordata","Mammalia","Rodentia","Pedetidae","Pedetes","capensis","Springhare",20,2300,4.427,309.05
+"2723",2747,"Animalia","Chordata","Mammalia","Rodentia","Sciuridae","Ammospermophilus","leucurus","White-tailed antelope squirrel",11.2,94.1,0.511,310.65
+"2732",2756,"Animalia","Chordata","Mammalia","Rodentia","Sciuridae","Callospermophilus","lateralis","Golden-mantled ground squirrel",10.4,249.6,0.967,309.45
+"2744",2768,"Animalia","Chordata","Mammalia","Rodentia","Sciuridae","Glaucomys","volans","Southern flying squirrel",19,67.4,0.414,312.15
+"2745",2769,"Animalia","Chordata","Mammalia","Rodentia","Sciuridae","Heliosciurus","rufobrachium","Red-legged sun squirrel",8.7,230,0.744,309.15
+"2746",2770,"Animalia","Chordata","Mammalia","Rodentia","Sciuridae","Ictidomys","tridecemlineatus","Thirteen-lined ground squirrel",7.9,198.4,0.983,308.85
+"2750",2774,"Animalia","Chordata","Mammalia","Rodentia","Sciuridae","Marmota","flaviventris","Yellow-bellied marmot",21.2,4295,8.626,309.65
+"2752",2776,"Animalia","Chordata","Mammalia","Rodentia","Sciuridae","Marmota","monax","Woodchuck",14,2650,3.696,310.15
+"2772",2796,"Animalia","Chordata","Mammalia","Rodentia","Sciuridae","Sciurus","carolinensis","Eastern gray squirrel",23.6,440,2.062,311.85
+"2782",2806,"Animalia","Chordata","Mammalia","Rodentia","Sciuridae","Spermophilus","citellus","European ground squirrel",6.7,240,1.272,310.65
+"2789",2813,"Animalia","Chordata","Mammalia","Rodentia","Sciuridae","Tamias","minimus","Least chipmunk",10,49.3,0.349,310.15
+"2794",2818,"Animalia","Chordata","Mammalia","Rodentia","Sciuridae","Tamias","striatus","Eastern chipmunk",9.5,89.6,0.813,311.35
+"2796",2820,"Animalia","Chordata","Mammalia","Rodentia","Sciuridae","Tamiasciurus","hudsonicus","Red squirrel",9.8,219.6,1.615,311.85
+"2800",2824,"Animalia","Chordata","Mammalia","Rodentia","Sciuridae","Xerospermophilus","mohavensis","Mohave ground squirrel",7.8,240,0.629,310.15
+"2801",2825,"Animalia","Chordata","Mammalia","Rodentia","Sciuridae","Xerospermophilus","tereticaudus","Round-tailed ground squirrel",8.9,125.1,0.501,309.45
+"2803",2827,"Animalia","Chordata","Mammalia","Rodentia","Sciuridae","Xerus","inauris","South African ground squirrel",11.5,528.5,1.775,309.95
+"2804",2828,"Animalia","Chordata","Mammalia","Rodentia","Spalacidae","Cannomys","badius","Lesser bamboo rat",4.8,344,0.96,309.15
+"2806",2830,"Animalia","Chordata","Mammalia","Rodentia","Spalacidae","Spalax","ehrenbergi","Palestine mole rat",20.2,133.8,0.585,308.7
+"2811",2835,"Animalia","Chordata","Mammalia","Scandentia","Tupaiidae","Tupaia","glis","Common tree shrew",12.4,123,0.522,310.15
+"2814",2838,"Animalia","Chordata","Mammalia","Scandentia","Tupaiidae","Urogale","everetti","Mindanao tree shrew",11.5,260.6,1.25,309.15
+"2823",2847,"Animalia","Chordata","Mammalia","Soricomorpha","Soricidae","Crocidura","leucodon","Bicolored shrew",2.9,11.7,0.166,308.15
+"2824",2848,"Animalia","Chordata","Mammalia","Soricomorpha","Soricidae","Crocidura","russula","White-toothed shrew",4,10.8,0.143,307.85
+"2825",2849,"Animalia","Chordata","Mammalia","Soricomorpha","Soricidae","Crocidura","suaveolens","Lesser shrew",2.8,6.9,0.112,308.25
+"2826",2850,"Animalia","Chordata","Mammalia","Soricomorpha","Soricidae","Cryptotis","parva","Least shrew",3.5,6.3,0.164,310.15
+"2829",2853,"Animalia","Chordata","Mammalia","Soricomorpha","Soricidae","Neomys","fodiens","Eurasian water shrew",3.1,16,0.328,310.45
+"2831",2855,"Animalia","Chordata","Mammalia","Soricomorpha","Soricidae","Sorex","araneus","Eurasian shrew",3.2,8.4,0.348,308.15
+"2843",2867,"Animalia","Chordata","Mammalia","Soricomorpha","Soricidae","Suncus","etruscus","White-toothed pygmy shrew",3.2,2.4,0.063,309.15
+"2844",2868,"Animalia","Chordata","Mammalia","Soricomorpha","Soricidae","Suncus","murinus","Asian house shrew",3.2,39.7,0.403,311.85
+"2845",2869,"Animalia","Chordata","Mammalia","Soricomorpha","Talpidae","Condylura","cristata","Star-nosed mole",2.5,49,0.615,310.85
+"2851",2875,"Animalia","Chordata","Mammalia","Tubulidentata","Orycteropodidae","Orycteropus","afer","Aardvark",29.8,48000,34.275,307.65
+"2852",2877,"Animalia","Chordata","Reptilia","Crocodilia","Alligatoridae","Alligator","mississippiensis","American alligator",77,1079,0.1539,295.31
+"2873",2898,"Animalia","Chordata","Reptilia","Rhynchocephalia","Sphenodontidae","Sphenodon","punctatus","Tuatara",90,430,0.0605,295.5
+"2897",2922,"Animalia","Chordata","Reptilia","Squamata","Anguidae","Elgaria","multicarinata","Southern alligator lizard",9.8,31.5,0.0132,295.5
+"2902",2927,"Animalia","Chordata","Reptilia","Squamata","Boidae","Boa","constrictor","Boa constrictor",40.4,3532,0.3589,293
+"2981",3006,"Animalia","Chordata","Reptilia","Squamata","Colubridae","Natrix","natrix","Grass snake",20,94.2,0.0295,290.25
+"3116",3141,"Animalia","Chordata","Reptilia","Squamata","Iguanidae","Dipsosaurus","dorsalis","Desert iguana",14.6,69.5,0.0441,305.5
+"3127",3152,"Animalia","Chordata","Reptilia","Squamata","Lacertidae","Lacerta","viridis","European green lizard",10,15.7,0.00337,293.83
+"3151",3176,"Animalia","Chordata","Reptilia","Squamata","Pythonidae","Python","molurus","Indian python",34.2,12370,1.2661,303
+"3153",3178,"Animalia","Chordata","Reptilia","Squamata","Pythonidae","Python","reticulatus","Reticulated python",29.4,32000,2.7349,297.5
+"3169",3194,"Animalia","Chordata","Reptilia","Squamata","Scincidae","Eumeces","obsoletus","Great Plains skink",7.3,30,0.0206,300.5
+"3175",3200,"Animalia","Chordata","Reptilia","Squamata","Scincidae","Tiliqua","scincoides","Australian blue-tongued lizard",26.6,493,0.2127,303
+"3181",3206,"Animalia","Chordata","Reptilia","Squamata","Teiidae","Cnemidophorus","tigris","Western whiptail",7.8,18,0.017,304.25
+"3296",3322,"Animalia","Chordata","Reptilia","Testudines","Emydidae","Chrysemys","picta","Painted turtle",61,400,0.0236,289.5
+"3319",3345,"Animalia","Chordata","Reptilia","Testudines","Emydidae","Trachemys","scripta","Common slider",41.3,240,0.1157,297

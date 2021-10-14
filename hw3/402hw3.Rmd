@@ -1,0 +1,125 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
+--
+title: "36-402 Homework 3"
+author: "Jacky Liu"
+date: "2/12/21"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+```{r}
+library(graphics)
+ucb = as.data.frame(UCBAdmissions)
+```
+
+## Problem 3
+
+### Problem 3 (a)
+
+```{r}
+prop.test(x = c(1198, 557), n = c(1198+1493, 557+1278), alternative = "greater")
+```
+Using the two-proportions z-test as shown above where 
+$$H0: P_{Male} = P_{Female}$$  $$ H_A: P_{Male} > P_{Female}$$
+we get a p-value of 2.2e-16. Since this value is close to 0, we reject our null hypothesis and conclude that the proportion of male applicants admitted is most likely higher than the proportion of female applicants admitted. 
+
+### Problem 3 (b)
+
+```{r}
+# Department A
+prop.test(x = c(89, 512), n = c(89+19, 512+313), alternative = "greater")
+# Department B
+prop.test(x = c(17, 353), n = c(17+8, 353+207), alternative = "greater")
+# Department C
+prop.test(x = c(202, 120), n = c(202+391, 120+205), alternative = "greater")
+# Department D
+prop.test(x = c( 131,138), n = c( 131+244,138+279), alternative = "greater")
+# Department E
+prop.test(x = c(94, 53), n = c( 94+299,53+138), alternative = "greater")
+# Department F
+prop.test(x = c(24, 22), n = c(24+317, 22+351), alternative = "greater")
+```
+
+Based on statistical tests, females were only admitted at a significantly higher rate than males in department A. However, factually they were admitted at a higher rate by department A, B, D, and F. This is a near example of Simpson's paradox because the statistics contradict when we look at the groups separately vs when we combine the groups, which shows us that we can't only look at the combined data as there is a third factor involved. 
+
+### Problem 3 (c)
+
+```{r}
+# x: 1 = Female, 0 = Male
+# y: 1 = Admitted, 0 = Rejected
+# z: Departments A-F
+# vec should be passed in with format: c(admitted male, admitted female, rejected male, rejected female)
+calc_cond_regression = function(x, vec) {
+  if(x == 0){ # male
+    p = vec[1] / (vec[1] + vec[3])
+  } else { # female
+    p = vec[2] / (vec[2] + vec[4])
+  }
+  return(p)
+}
+# statistics for each department
+A = c(512,89,313,19)
+B = c(353,17,207,8)
+C = c(120,202,205,391)
+D = c(138,131,279,244)
+E = c(53,94,138,299)
+f = c(22,24,351,317)
+```
+
+r(0,A):
+```{r}
+calc_cond_regression(0, A)
+```
+r(1,A):
+```{r}
+calc_cond_regression(1, A)
+```
+r(0,B):
+```{r}
+calc_cond_regression(0, B)
+```
+r(1,B):
+```{r}
+calc_cond_regression(1, B)
+```
+r(0,C):
+```{r}
+calc_cond_regression(0, C)
+```
+r(1,C):
+```{r}
+calc_cond_regression(1, C)
+```
+r(0,D):
+```{r}
+calc_cond_regression(0, D)
+```
+r(1,D):
+```{r}
+calc_cond_regression(1, D)
+```
+r(0,E):
+```{r}
+calc_cond_regression(0, E)
+```
+r(1,E):
+```{r}
+calc_cond_regression(1, E)
+```
+r(0,f):
+```{r}
+calc_cond_regression(0, f)
+```
+r(1,f):
+```{r}
+calc_cond_regression(1, f)
+```

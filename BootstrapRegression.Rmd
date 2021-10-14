@@ -1,0 +1,247 @@
+---
+title: "Bootstrapping Regressions"
+author: "36-402 (based on example by Professor Shalizi)"
+date: "March 11, 2021"
+output:
+  xaringan::moon_reader:
+    css: [default, metropolis, metropolis-fonts]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+# General set up
+# You'll need the xaringan package installed to run this:
+# install.packages("xaringan")
+
+# Load packages we may use later
+library(knitr)
+opts_chunk$set(echo=TRUE, comment="")
+
+# Set knitr options for knitting code into the report:
+# - Print code on a white background (like the rest of the page)
+# - Automagically tidy up the appearance of the code
+# - Save results so that code blocks aren't re-run unless code changes (cache),
+# _or_ a relevant earlier code block changed (autodep), but don't re-run if the
+# only thing that changed was the comments (cache.comments)
+# - Don't clutter R output with messages or warnings (message, warning)
+  # This _will_ leave error messages showing up in the knitted report
+opts_chunk$set(background="white",
+               cache=TRUE, autodep=TRUE, cache.comments=FALSE,
+               message=FALSE, warning=FALSE)
+
+# Turn off meaningless clutter in summary() output
+options(show.signif.stars=TRUE)
+
+# High-res images for nice screens
+knitr::opts_chunk$set(fig.retina = 3)
+```
+
+
+
+
+## Bootstrapping Regressions
+
+A regression is a model for $Y$ conditional on $X$:
+$$
+Y= r(X) + \mathrm{noise}
+$$
+Silent about distribution of $X$, so how do we simulate?
+
+Options, putting less and less trust in the model:
+
+- Hold $x_i$ fixed, set ${Y}^*_i = \hat{r}(x_i) + \mathrm{noise}$ from model's estimated noise distribution (e.g., Gaussian or $t$)
+- Hold $x_i$ fixed, set ${Y}^*_i = \hat{r}(x_i) + \mathrm{noise}$, noise _resampled from the residuals_
+- Resample $(X_i, Y_i)$ pairs (resample data-points or resample cases)
+
+---
+
+## Cats' Hearts
+
+`cats` has weights for cats' hearts, as well as bodies
+
+How does heart weight relate to body weight?
+(Useful if vet wants to know how much heart medicine to prescribe)
+
+```{r, echo=FALSE, out.width="50%"}
+knitr::include_graphics("cat-heart.jpg")
+```
+
+
+---
+
+## Cats' Hearts
+
+```{r}
+library(MASS)
+data(cats)
+summary(cats)
+```
+
+---
+
+## Cats' Hearts
+
+```{r, fig.align="center", fig.height=5}
+plot(Hwt ~ Bwt, data=cats, xlab="Body weight (kg)", 
+     ylab="Heart weight (g)")
+cats.lm <- lm(Hwt ~ Bwt, data=cats)
+abline(cats.lm)
+```
+
+---
+
+## Cats' Hearts
+
+Coefficients and "standard" confidence intervals:
+```{r}
+coefficients(cats.lm)
+confint(cats.lm)
+```
+What assumptions do the "standard" confidence intervals make?
+
+---
+## Cats' Hearts
+
+The residuals look somewhat reasonable:
+
+```{r, echo=FALSE, fig.align="center", fig.height=5}
+par(mfrow=c(1,2))
+plot(cats$Bwt, residuals(cats.lm))
+qqnorm(residuals(cats.lm))
+qqline(residuals(cats.lm))
+par(mfrow=c(1,1))
+```
+
+But let's bootstrap anyway.
+
+---
+
+## Cats' Hearts
+
+Resample residuals:
+```{r}
+resample <- function(x) {
+  return(sample(x, size=length(x), replace=TRUE))
+}
+
+sim.cats.resids <- function() {
+  new.cats <- cats
+  noise <- resample(residuals(cats.lm))
+  new.cats$Hwt <- fitted(cats.lm) + noise
+  return(new.cats)
+}
+```
+
+Re-estimate on new data:
+
+```{r}
+coefs.cats.lm <- function(df) {
+  fit <- lm(Hwt ~ Bwt, data=df)
+  return(coefficients(fit))
+}
+```
+
+---
+
+# Pivotal CIs
+
+Once we have our bootstrap samples, we need a way to get pivotal confidence intervals:
+
+```{r}
+pivotal.CIs <- function(orig_estimate, boots) {
+  qs <- apply(boots, 1, quantile, c(0.025, 0.975))
+ 
+  out <- cbind(2 * orig_estimate - qs[2, ],
+               2 * orig_estimate - qs[1, ])
+  colnames(out) <- c("2.5 %", "97.5 %")
+  return(out)
+}
+```
+
+---
+
+## Cats' Hearts
+
+Re-sample to get CIs:
+
+```{r}
+cats.lm.samp.dist.resids <- replicate(1000,
+   coefs.cats.lm(sim.cats.resids()))
+
+pivotal.CIs(coefficients(cats.lm),
+            cats.lm.samp.dist.resids)
+```
+
+---
+
+## Cats' Hearts
+
+Try resampling whole rows:
+
+```{r}
+resample.data.frame <- function(df) {
+  return(df[resample(1:nrow(df)), ])
+}
+```
+
+```{r}
+cats.lm.samp.dist.cases <- replicate(1000,
+  coefs.cats.lm(resample.data.frame(cats)))
+
+pivotal.CIs(coefficients(cats.lm),
+            cats.lm.samp.dist.cases)
+```
+
+Why are these CIs wider?
+
+---
+
+## Why Pivotal CIs vs. Quantiles?
+
+The "obvious" bootstrap CI is:
+
+```{r}
+t(apply(cats.lm.samp.dist.cases, 1, quantile, c(0.025, 0.975)))
+```
+
+vs the pivotal:
+
+```{r}
+pivotal.CIs(coefficients(cats.lm),
+            cats.lm.samp.dist.cases)
+```
+
+Not much different in this case, but asymptotically, the pivotal will have correct 95% coverage.
+
+---
+
+## Why Do This?
+
+- Resampling residuals works as long as the noise is IID
+    + Noise could be Gaussian...
+    + Or it could be very non-Gaussian
+- Resampling whole cases works as long as observations are IID
+    + noise needn't be independent of $X$
+    + needn't be Gaussian
+    + linear model needn't be right
+
+---
+
+## Sources of Error in Bootstrapping
+
+- **Simulation** Using only $B$ bootstrap replicates
+    + Make this small by letting $B\rightarrow\infty$
+    + Costs computing time
+	+ Diminishing returns: error is generally $O(1/\sqrt{B})$
+- **Approximation** Using $\hat{P}$ instead of $P_{X,\theta}$
+    + Make this small by careful statistical modeling
+- **Estimation** Only a finite number of samples
+    + Make this small by being careful about what we simulate (e.g. improve on crude confidence intervals by ``pivoting'')
+
+Generally: for fixed $n$, nonparametric bootstrap shows more uncertainty
+than parametric bootstraps, but is less at risk to modeling mistakes
+(yet another bias-variance tradeoff)
